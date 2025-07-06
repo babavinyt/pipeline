@@ -1,0 +1,37 @@
+# Terraform specific files
+*.tfstate
+*.tfstate.backup
+
+.terraform/
+.terraform.lock.hcl
+crash.log
+
+# Ignore override files (local)
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore secrets if used
+secrets.auto.tfvars
+
+# VSCode settings (optional)
+.vscode/
+
+# macOS system files (if you're on Mac)
+.DS_Store
+
+# Azure DevOps pipeline artifacts (optional)
+*.log
+*.zip
+*.tar.gz
+*.bin
+
+# Node modules or other build dependencies (optional)
+node_modules/
+dist/
+
+# Python cache (if Python scripts are used in pipeline)
+__pycache__/
+*.py[cod]
